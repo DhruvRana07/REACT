@@ -12,9 +12,8 @@ function App() {
     return true;
   };
 
-  const isComposite = (num) => {
-    if (num > 1 && !isPrime(num)) return true;
-    return false;
+  const isEven = (num) => {
+    return num % 2 === 0;
   };
 
   const getResultColor = (result) => {
@@ -42,9 +41,9 @@ function App() {
         </button>
         <h2 className="count-display">Count: {count}</h2>
         <p className="result">
-          Composite Number :{" "}
-          <span className={getResultColor(isComposite(count))}>
-            {isComposite(count) ? "True" : "False"}
+          This Number is :{" "}
+          <span className={getResultColor(isEven(count))}>
+            {isEven(count) ? "Even" : "Odd"}
           </span>
         </p>
         <p className="result">
