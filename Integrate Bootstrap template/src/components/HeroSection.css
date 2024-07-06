@@ -1,0 +1,41 @@
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-image {
+  width: 750px;
+  max-width: 750px;
+  border-radius: 50%;
+  margin-top: 90px;
+  margin-left: -10%;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 25px;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.hero-section .lead {
+  font-size: 1.4rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.custom-button {
+  border-radius: 50px;
+
+}
