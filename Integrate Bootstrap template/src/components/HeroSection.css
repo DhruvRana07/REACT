@@ -1,18 +1,15 @@
 .hero-section {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  min-height: 100vh;
 }
 
 .hero-image {
-  width: 750px;
-  max-width: 750px;
   border-radius: 50%;
-  margin-top: 90px;
-  margin-left: -10%;
+  margin-top: 20px;
 }
 
 .social-icons {
@@ -37,10 +34,10 @@
 
 .custom-button {
   border-radius: 50px;
-
 }
+
 .hero-section h1 {
   border-bottom: 2px solid #007bff;
-  width: 56%;
+  display: inline-block;
   padding-bottom: 5px;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './HeroSection.css';
 import proImage from '../pro.png';
 
@@ -6,9 +7,9 @@ const HeroSection = () => {
   return (
     <div className="container hero-section">
       <div className="row align-items-center">
-        <div className="col-md-6 text-center text-md-start">
+        <div className="col-md-6 text-center text-md-start mb-4 mb-md-0">
           <h1 className="mb-3">Hi, I'm Dhruv Rana.</h1>
-          <h3 className="mb-3">Full stack Developer</h3>
+          <h3 className="mb-3">Full Stack Developer</h3>
           <p className="lead">
             A freelance Web developer from London. I convert custom web <br />designs to bootstrap templates.
             <br />
@@ -23,7 +24,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="col-md-6 text-center">
-          <img src={proImage} alt="Dhruv Rana" className="hero-image" />
+          <img src={proImage} alt="Dhruv Rana" className="img-fluid hero-image" width={1000}/>
         </div>
       </div>
     </div>
