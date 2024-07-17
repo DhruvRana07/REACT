@@ -1,0 +1,16 @@
+/* src/NavLink.module.css */
+.navLink {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .navLinkActive {
+    background-color: #007bff;
+  }
+  
+  .navLinkDefault {
+    background-color: #333;
+  }
+  
