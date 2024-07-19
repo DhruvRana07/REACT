@@ -1,12 +1,11 @@
 .navbar {
   padding: 15px 20px;
   display: flex;
-  justify-content: center; /* Centering the navbar items */
+  justify-content: center;
   align-items: center;
   position: relative;
 }
 
-/* Light Theme */
 .navbar.light {
   background-color: #f0f0f0;
 }
@@ -33,7 +32,6 @@
   background-color: #ddd;
 }
 
-/* Dark Theme */
 .navbar.dark {
   background-color: #333;
 }

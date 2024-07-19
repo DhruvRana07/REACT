@@ -1,5 +1,3 @@
-// src/Components/Filter.js
-
 import React from 'react';
 import './Filter.css';
 
@@ -25,7 +23,6 @@ const Filter = ({
     setSortOption(e.target.value);
   };
 
-  // Function to divide categories into 3 columns
   const divideIntoColumns = (categories) => {
     const itemsPerColumn = Math.ceil(categories.length / 3);
     const columns = [[], [], []];
@@ -38,7 +35,6 @@ const Filter = ({
     return columns;
   };
 
-  // Divide categories into columns
   const dividedCategories = divideIntoColumns(categories);
 
   return (

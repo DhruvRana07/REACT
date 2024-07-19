@@ -20,18 +20,15 @@ const Product = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('https://fakestoreapi.com/products');
+    axios.get('https://fakestoreapi.com/products')
+      .then(response => {
         setProducts(response.data);
         setLoading(false);
-      } catch (error) {
+      })
+      .catch(error => {
         console.error('Error fetching data:', error);
         setLoading(false);
-      }
-    };
-
-    fetchData();
+      });
   }, []);
 
   const postsPerPage = 4;
@@ -77,13 +74,14 @@ const Product = () => {
     }
   };
 
-  const handleDelete = async (id) => {
-    try {
-      await axios.delete(`https://fakestoreapi.com/products/${id}`);
-      setProducts(products.filter((el) => el.id !== id));
-    } catch (error) {
-      console.error('Error deleting product:', error);
-    }
+  const handleDelete = (id) => {
+    axios.delete(`https://fakestoreapi.com/products/${id}`)
+      .then(() => {
+        setProducts(products.filter((el) => el.id !== id));
+      })
+      .catch(error => {
+        console.error('Error deleting product:', error);
+      });
   };
 
   const handleEdit = (id) => {

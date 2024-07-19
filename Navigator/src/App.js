@@ -7,7 +7,7 @@ import Login from './Components/Login';
 import Navbar from './Components/Navbar';
 import PrivateRoute from './Routes/PrivateRoute';
 import { AuthProvider } from './context/AuthContext';
-import './styles.css';  // Import the CSS file
+import './styles.css';
 
 const App = () => {
   return (
