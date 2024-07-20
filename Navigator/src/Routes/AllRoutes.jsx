@@ -5,6 +5,7 @@ import About from '../Components/About';
 import Products from '../Components/Products';
 import Login from '../Components/Login';
 import PrivateRoute from './PrivateRoute';
+import Description from '../Components/Description'; 
 
 const AllRoutes = () => {
   return (
@@ -13,8 +14,9 @@ const AllRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/products" element={<PrivateRoute />}>
-          <Route path="/products" element={<Products />} />
+        <Route path="/products/*" element={<PrivateRoute />}>
+          <Route path="" element={<Products />} />
+          <Route path=":id" element={<Description />} /> 
         </Route>
       </Routes>
     </Router>

@@ -113,9 +113,13 @@ const Product = () => {
         <div className="grid-container">
           {currentPosts.map((el) => (
             <div className="product-card" key={el.id}>
-              <img src={el.image} alt={el.title} />
+              <Link to={`/products/${el.id}`}>
+                <img src={el.image} alt={el.title} className="product-image"/>
+              </Link>
               <div className="product-details">
-                <h2 className="title">{el.title}</h2>
+                <Link to={`/products/${el.id}`} className="product-title">
+                  <h2 className="title">{el.title}</h2>
+                </Link>
                 <h4 className="price">$ {el.price}</h4>
                 <span className="category">{el.category}</span>
                 <p className="description">
