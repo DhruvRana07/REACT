@@ -1,4 +1,3 @@
-// src/components/Home.jsx
 import React from 'react';
 import '../styles/Home.css';
 
@@ -13,7 +12,7 @@ const Home = () => {
       <div className="featured-products">
         <h2>Featured Products</h2>
         <p>Check out some of our popular items that you might love!</p>
-        {/* Add a component or list of featured products here */}
+        {}
       </div>
       <footer className="footer">
         <div className="footer-content">

@@ -53,10 +53,9 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       await signInWithGoogle();
-      navigate('/dashboard'); // Navigate to Dashboard on successful login
+      navigate('/dashboard');
     } catch (error) {
       console.error('Login failed:', error);
-      // Handle error (e.g., show an error message to the user)
     }
   };
 
