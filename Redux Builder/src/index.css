@@ -1,0 +1,17 @@
+.light_theme {
+  color: black;
+  background-color: white;
+}
+
+.dark_theme {
+  color: white;
+  background-color: black;
+}
+
+.counter_container {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #000;
+  margin: 20px auto;
+  width: 300px;
+}

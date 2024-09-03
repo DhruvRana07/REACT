@@ -1,0 +1,39 @@
+.theme-switcher button {
+    background: linear-gradient(135deg, #f0e68c, #e0c68c);
+    color: #333;
+    border: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.theme-switcher button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    background: linear-gradient(135deg, #d1d1d1, #b0b0b0);
+    box-shadow: none;
+}
+
+.theme-switcher button:hover:enabled {
+    background: linear-gradient(135deg, #e1d679, #d0c579);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.theme-switcher button:active:enabled {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .theme-switcher button {
+    background: linear-gradient(135deg, #444, #333);
+    color: #ffffff;
+}
+
+.dark-theme .theme-switcher button:hover:enabled {
+    background: linear-gradient(135deg, #555, #444);
+}
