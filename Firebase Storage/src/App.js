@@ -1,9 +1,8 @@
-// App.js
 import React, { useState } from "react";
 import useFirestore from "./hooks/useFirestore";
 import Form from "./components/Form";
 import DataTable from "./components/DataTable";
-import Notification from "./components/Notification"; // Import the Notification component
+import Notification from "./components/Notification";
 import "./styles.css";
 
 const App = () => {
@@ -21,12 +20,12 @@ const App = () => {
 
   const handleUpdateData = (id, updatedData) => {
     updateData(id, updatedData);
-    showNotification("Data updated successfully!", "info"); // Pass "info" type for updates
+    showNotification("Data updated successfully!", "info");
   };
 
   const handleDeleteData = (id) => {
     deleteData(id);
-    showNotification("Data deleted successfully!", "error"); // Pass "error" type for deletion
+    showNotification("Data deleted successfully!", "error");
   };
 
   return (
@@ -41,7 +40,7 @@ const App = () => {
       {notification.visible && (
         <Notification
           message={notification.message}
-          type={notification.type} // Pass the type to Notification
+          type={notification.type}
           onClose={() => setNotification({ ...notification, visible: false })}
         />
       )}
