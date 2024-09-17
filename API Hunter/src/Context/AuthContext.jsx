@@ -17,7 +17,7 @@ function AuthContextProvider({ children }) {
 
     const logoutUser = () => {
         setAuthState({ isAuth: false, token: null });
-        navigate("/login"); // Redirect to Login page
+        navigate("/login");
     };
 
     return (

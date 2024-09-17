@@ -17,15 +17,9 @@ function AllRoutes() {
               </PrivateRoute>
               }> </Route>
             <Route path='/products/:id' element={< SingleProductPage/>}> </Route>
-
-            
         </Routes>
     </div>
   );
 }
 
 export default AllRoutes;
-
-
-
-// login email :   eve.holt@reqres.in

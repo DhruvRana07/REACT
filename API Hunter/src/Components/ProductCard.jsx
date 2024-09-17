@@ -10,7 +10,7 @@ export default function ProductCard({
         <tr data-testid="item">
             <td>{id}</td>
             <td>
-{/* //     add Link here and keep the data-testid="brand" on Link tag       */}
+{}
 <Link to={`/products/${id}`}data-testid="brand" style={{color:"green"}}>{brand}</Link>
             </td>
             <td data-testid="category">{category}

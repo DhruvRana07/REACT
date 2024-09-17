@@ -12,7 +12,7 @@ function ProductsTable({data}){
                     </tr>
                 </thead>
                 <tbody>
-                    {/* map through the data */}
+                    {}
                     {data.map((item) => {
                     return < ProductCard id={item.id} brand={item.brand} category={item.category} price={item.price}/>
                     })}
