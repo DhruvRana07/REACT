@@ -1,31 +1,31 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import Loader from "../Components/Loader"; // Import the Loader component
+import Loader from "../Components/Loader";
 
 function SingleProductPage() {
   const { id } = useParams();
   const [data, setData] = useState({});
-  const [loading, setLoading] = useState(false); // Loading state
+  const [loading, setLoading] = useState(false); 
 
   useEffect(() => {
-    setLoading(true); // Set loading to true before making the API call
+    setLoading(true);
     axios
       .get(
         `https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-tech-products/${id}`
       )
       .then((res) => {
         setData(res.data.data);
-        setLoading(false); // Set loading to false after receiving the data
+        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
-        setLoading(false); // Set loading to false even in case of error
+        setLoading(false);
       });
   }, [id]);
 
   if (loading) {
-    return <Loader />; // Render Loader component while data is being fetched
+    return <Loader />;
   }
 
   return (
